@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+</head>
+<body>
+    <script>
+        function changeImage() {
+            var imageElement = document.getElementById("mainImage");
+            imageElement.src = "images/1989.jpeg";
+        }
+
+        function revertImage() {
+            var imageElement = document.getElementById("mainImage");
+            imageElement.src = "images/1989TV.jpeg";
+        }
+    </script>
+    <button onclick="revertImage()">Taylor's Version</button>
+    <button onclick="changeImage()">Original Version</button><br>
+    <img id="mainImage" src="images/1989.jpeg" alt="Original Image" width="300px">
+</body>
+</html>
